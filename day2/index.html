@@ -1,0 +1,40 @@
+<!-- <!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Learning functions</title>
+    </head>
+    <body>
+        <p id ="data"></p>
+        var y = test("Danny");
+            var x = document.getElementById("data");
+            x.innerHTML=y;
+        <script type = "text/javascript" src ="./functions/closures.js">
+        </script>
+    </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learning functions</title>
+    </head>
+    <body>
+        <p id="data"></p>
+        
+        <!-- Include the external script file -->
+        <script type="text/javascript" src="./functions/closures.js"></script>
+
+        <!-- JavaScript code to run after the external script is loaded -->
+        <script type="text/javascript">
+            // Ensure the external script has defined the `test` function
+            if (typeof test === 'function') {
+                var y = test("Danny");
+                var x = document.getElementById("data");
+                x.innerHTML = y; // Correctly set innerHTML
+            } else {
+                console.error('The function `test` is not defined.');
+            }
+        </script>
+    </body>
+</html>

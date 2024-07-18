@@ -123,6 +123,7 @@ console.log(test("Rocky"));
     const cache = {};
     return function(...args) {
       const key = JSON.stringify(args); // Convert arguments to a string key
+      console.log(key);
       if (cache[key]) {
         return cache[key];
       } else {

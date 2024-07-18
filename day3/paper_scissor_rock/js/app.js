@@ -47,7 +47,7 @@ playGame = (userChoice) => {
         }
 
         showWinner(userWin, userChoice, compChoice);
-        updateScore(userWin, userScore,compScore);
+        updateScore(userWin, userScore, compScore);
     }
 
 }
@@ -57,6 +57,6 @@ const showWinner = (userWin, userChoice, compChoice) => {
     msg.style.backgroundColor = userWin ? "green" : "red";
 };
 
-const updateScore= (userWin, userScore, compScore) =>{
-    userWin? userScoreCount.innerText = userScore : compScoreCount.innerText = compScore;
+const updateScore = (userWin, userScore, compScore) => {
+    userWin ? userScoreCount.innerText = userScore : compScoreCount.innerText = compScore;
 };
